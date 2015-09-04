@@ -43,3 +43,8 @@ group :development, :test do
   gem 'spring'
 end
 
+gem 'pry-rails'
+gem 'devise'
+gem 'paperclip'
+gem 'kaminari'
+gem 'rails_12factor'
