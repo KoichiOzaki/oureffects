@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Oureffects</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<html class="pc" lang="ja" xmlns:fb="http://ogp.me/ns/fb#" xmlns:og="http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+      <title>OurEffects<%= yield :title %></title>
+      <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+      <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+      <%= csrf_meta_tags %>
+    </meta>
+  </head>
+  <body>
+    <%= render partial: 'common/header' %>
 
-<%= yield %>
+    <%= yield %>
 
-</body>
+  </body>
 </html>
